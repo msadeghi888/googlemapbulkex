@@ -24,17 +24,18 @@ pip install requests pandas
 
 1. Sign up for an API key at [SerpAPI](https://serpapi.com/)
 2. Replace the `YOUR_API_KEY` placeholder with your actual API key in the script
+3. Set your desired location by replacing `YOUR_LOCATION` with your target location
 
 ## Usage
 
 1. Configure your search parameters in the script as needed:
-   - `QUERY`: Your search term
+   - `QUERY`: Your search term (default is in Persian)
    - `location`: Target location
-   - Other parameters like language can be adjusted as well
+   - Other parameters like language (`hl`) can be adjusted as well
 
 2. Run the script:
    ```bash
-   python location_scraper.py
+   python main.py
    ```
 
 3. The script will output a CSV file named `fil.csv` containing all the found locations
@@ -42,13 +43,13 @@ pip install requests pandas
 ## CSV Output Format
 
 The CSV file includes the following columns:
-- نام تعمیرگاه (Name)
-- آدرس (Address)
-- شماره تماس (Phone Number)
-- امتیاز (Rating)
-- تعداد نظر (Number of Reviews)
-- نوع مکان (Location Type)
-- لینک گوگل مپ (Google Maps Link)
+- Name
+- Address
+- Phone
+- Rating
+- Reviews
+- Type
+- Google Maps Link
 
 ## Error Handling
 
